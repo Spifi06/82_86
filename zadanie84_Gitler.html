@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title> Zadanie 84</title>
+<script>
+function gitler_start()
+{
+start_git = new Date();
+poczatek_git=start_git.getTime()
+}
+function gitler_stop()
+{
+stop_git = new Date();
+koniec_git=stop_git.getTime()
+roznica_git=koniec_git-poczatek_git;
+pokaz1.innerHTML=roznica_git/1000+" s";
+}
+</script>
+</head>
+<body>
+<script>
+dzis_git = new Date();
+document.write("<br>Aktualny czas : ",dzis_git.getHours(),":",dzis_git.getMinutes());
+</script> <br> <br>
+<input type="button" name="Button1" value="START stoper" onclick="gitler_start()">
+<input type="button" name="Button2" value="STOP stoper" onclick="gitler_stop()">
+<br>
+<table border=10>
+<tr id="pokaz1"></tr>
+</table>
+</body>
+</html>

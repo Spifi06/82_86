@@ -1,0 +1,35 @@
+<textarea rows="40" cols="110" readonly="readonly" style=" resize: none;">
+<html>
+<head>
+<meta charset="utf-8">
+<title> Zadanie 86</title>
+<script>
+function przycisk1_gitler()
+{
+pokaz1.innerHTML="Ostatnio zmodyfikowany : "+document.lastModified;
+}
+function przycisk2_gitler()
+{
+pokaz2.innerHTML="Aktualna data : "+Date();
+}
+function przycisk3_gitler()
+{
+dzis_git = new Date();
+pokaz3.innerHTML=("Aktualny czas : ",dzis_git.getHours(),":",dzis_git.getMinutes());
+}
+</script>
+</head>
+<body>
+<form>
+<a onclick="przycisk1_gitler(' ')"><img src="1_1.jpg" alt="Przycisk1" border="0" onmouseover="this.src = '1_2.jpg'" onmouseout="this.src ='1_1.jpg'" /></a>
+<a onclick="przycisk2_gitler(' ')"><img src="2_1.jpg" alt="Przycisk2" border="0" onmouseover="this.src = '2_2.jpg'" onmouseout="this.src ='2_1.jpg'" /></a>
+<a onclick="przycisk3_gitler(' ')"><img src="3_1.jpg" alt="Przycisk3" border="0" onmouseover="this.src = '3_2.jpg'" onmouseout="this.src ='3_1.jpg'" /></a>
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+<tr id="pokaz3"></tr>
+</table>
+
+</body>
+</html>
